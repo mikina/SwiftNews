@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  iOSProjectStarter
+//  SwiftNews
 //
 //  Created by Mike Mikina on 10/22/16.
 //  Copyright © 2016 SwiftCookies.com. All rights reserved.

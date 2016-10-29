@@ -6,16 +6,16 @@ def testing_pods
   pod 'Nimble'
 end
 
-target 'iOSProjectStarter' do
+target 'SwiftNews' do
   use_frameworks!
 
-  # Pods for iOSProjectStarter
+  # Pods for SwiftNews
   pod 'Reveal-iOS-SDK', :configurations => ['Debug']
   pod 'Fabric'
   pod 'Crashlytics'
 end
 
-target 'iOSProjectStarterSpec' do
+target 'SwiftNewsSpec' do
   use_frameworks!
   testing_pods  
 end

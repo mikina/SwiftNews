@@ -14,8 +14,8 @@
 		27215D9D1DBD100C00BCEA51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27215D9C1DBD100C00BCEA51 /* ViewController.swift */; };
 		27215DA41DBD136B00BCEA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27215DA31DBD136B00BCEA51 /* Assets.xcassets */; };
 		27215DA61DBD137D00BCEA51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27215DA51DBD137D00BCEA51 /* LaunchScreen.storyboard */; };
-		3888B3FD847C2CABA1797659 /* Pods_iOSProjectStarter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE801C7EA39ACC5918D7B09 /* Pods_iOSProjectStarter.framework */; };
-		F884D13592B242869695A9DB /* Pods_iOSProjectStarterSpec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAF14130E39CF0BC0D1E22D /* Pods_iOSProjectStarterSpec.framework */; };
+		3888B3FD847C2CABA1797659 /* Pods_SwiftNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE801C7EA39ACC5918D7B09 /* Pods_SwiftNews.framework */; };
+		F884D13592B242869695A9DB /* Pods_SwiftNewsSpec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAF14130E39CF0BC0D1E22D /* Pods_SwiftNewsSpec.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +24,7 @@
 			containerPortal = 271F39091DBC06D5001EB6D9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 271F39101DBC06D5001EB6D9;
-			remoteInfo = iOSProjectStarter;
+			remoteInfo = SwiftNews;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -32,20 +32,20 @@
 		2712F4251DBEB4800088845B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		2712F4271DBEB8BF0088845B /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2712F4291DBEBA720088845B /* TestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSpec.swift; sourceTree = "<group>"; };
-		271F39111DBC06D6001EB6D9 /* iOSProjectStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProjectStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		271F39251DBC06D6001EB6D9 /* iOSProjectStarterSpec.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSProjectStarterSpec.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		271F39111DBC06D6001EB6D9 /* SwiftNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		271F39251DBC06D6001EB6D9 /* SwiftNewsSpec.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNewsSpec.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		271F39351DBC0EFC001EB6D9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27215D991DBD0FB900BCEA51 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27215D9C1DBD100C00BCEA51 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27215DA31DBD136B00BCEA51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27215DA51DBD137D00BCEA51 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27215DA71DBD139C00BCEA51 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63ED7FAFCD0D8792F1814A91 /* Pods-iOSProjectStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectStarter.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProjectStarter/Pods-iOSProjectStarter.release.xcconfig"; sourceTree = "<group>"; };
-		6C4180C9B11A4686AF1ECC41 /* Pods-iOSProjectStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectStarter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProjectStarter/Pods-iOSProjectStarter.debug.xcconfig"; sourceTree = "<group>"; };
-		9EE801C7EA39ACC5918D7B09 /* Pods_iOSProjectStarter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSProjectStarter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAF81C0F481FCFC175393121 /* Pods-iOSProjectStarterSpec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectStarterSpec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProjectStarterSpec/Pods-iOSProjectStarterSpec.debug.xcconfig"; sourceTree = "<group>"; };
-		BBAF14130E39CF0BC0D1E22D /* Pods_iOSProjectStarterSpec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSProjectStarterSpec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC18A3EF4ACF5847976C3CAF /* Pods-iOSProjectStarterSpec.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectStarterSpec.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProjectStarterSpec/Pods-iOSProjectStarterSpec.release.xcconfig"; sourceTree = "<group>"; };
+		63ED7FAFCD0D8792F1814A91 /* Pods-SwiftNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNews/Pods-SwiftNews.release.xcconfig"; sourceTree = "<group>"; };
+		6C4180C9B11A4686AF1ECC41 /* Pods-SwiftNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNews/Pods-SwiftNews.debug.xcconfig"; sourceTree = "<group>"; };
+		9EE801C7EA39ACC5918D7B09 /* Pods_SwiftNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF81C0F481FCFC175393121 /* Pods-SwiftNewsSpec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNewsSpec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNewsSpec/Pods-SwiftNewsSpec.debug.xcconfig"; sourceTree = "<group>"; };
+		BBAF14130E39CF0BC0D1E22D /* Pods_SwiftNewsSpec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNewsSpec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC18A3EF4ACF5847976C3CAF /* Pods-SwiftNewsSpec.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNewsSpec.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNewsSpec/Pods-SwiftNewsSpec.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3888B3FD847C2CABA1797659 /* Pods_iOSProjectStarter.framework in Frameworks */,
+				3888B3FD847C2CABA1797659 /* Pods_SwiftNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F884D13592B242869695A9DB /* Pods_iOSProjectStarterSpec.framework in Frameworks */,
+				F884D13592B242869695A9DB /* Pods_SwiftNewsSpec.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +71,8 @@
 		1667FA5D4821C5F2B6EE624B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9EE801C7EA39ACC5918D7B09 /* Pods_iOSProjectStarter.framework */,
-				BBAF14130E39CF0BC0D1E22D /* Pods_iOSProjectStarterSpec.framework */,
+				9EE801C7EA39ACC5918D7B09 /* Pods_SwiftNews.framework */,
+				BBAF14130E39CF0BC0D1E22D /* Pods_SwiftNewsSpec.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,7 +80,7 @@
 		271F39081DBC06D5001EB6D9 = {
 			isa = PBXGroup;
 			children = (
-				271F39131DBC06D6001EB6D9 /* iOSProjectStarter */,
+				271F39131DBC06D6001EB6D9 /* SwiftNews */,
 				271F39121DBC06D6001EB6D9 /* Products */,
 				31D3480F390993B9019C6B6A /* Pods */,
 				1667FA5D4821C5F2B6EE624B /* Frameworks */,
@@ -90,13 +90,13 @@
 		271F39121DBC06D6001EB6D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				271F39111DBC06D6001EB6D9 /* iOSProjectStarter.app */,
-				271F39251DBC06D6001EB6D9 /* iOSProjectStarterSpec.xctest */,
+				271F39111DBC06D6001EB6D9 /* SwiftNews.app */,
+				271F39251DBC06D6001EB6D9 /* SwiftNewsSpec.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		271F39131DBC06D6001EB6D9 /* iOSProjectStarter */ = {
+		271F39131DBC06D6001EB6D9 /* SwiftNews */ = {
 			isa = PBXGroup;
 			children = (
 				27215D921DBD0D2D00BCEA51 /* Utils */,
@@ -105,18 +105,18 @@
 				27215D951DBD0D5700BCEA51 /* Extensions */,
 				27215D961DBD0D6700BCEA51 /* SupportingFiles */,
 				27215D971DBD0D7400BCEA51 /* Modules */,
-				271F39341DBC0EFC001EB6D9 /* iOSProjectStarterSpec */,
+				271F39341DBC0EFC001EB6D9 /* SwiftNewsSpec */,
 			);
-			path = iOSProjectStarter;
+			path = SwiftNews;
 			sourceTree = "<group>";
 		};
-		271F39341DBC0EFC001EB6D9 /* iOSProjectStarterSpec */ = {
+		271F39341DBC0EFC001EB6D9 /* SwiftNewsSpec */ = {
 			isa = PBXGroup;
 			children = (
 				271F39351DBC0EFC001EB6D9 /* Info.plist */,
 				2712F4291DBEBA720088845B /* TestSpec.swift */,
 			);
-			path = iOSProjectStarterSpec;
+			path = SwiftNewsSpec;
 			sourceTree = SOURCE_ROOT;
 		};
 		27215D921DBD0D2D00BCEA51 /* Utils */ = {
@@ -195,10 +195,10 @@
 		31D3480F390993B9019C6B6A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6C4180C9B11A4686AF1ECC41 /* Pods-iOSProjectStarter.debug.xcconfig */,
-				63ED7FAFCD0D8792F1814A91 /* Pods-iOSProjectStarter.release.xcconfig */,
-				AAF81C0F481FCFC175393121 /* Pods-iOSProjectStarterSpec.debug.xcconfig */,
-				DC18A3EF4ACF5847976C3CAF /* Pods-iOSProjectStarterSpec.release.xcconfig */,
+				6C4180C9B11A4686AF1ECC41 /* Pods-SwiftNews.debug.xcconfig */,
+				63ED7FAFCD0D8792F1814A91 /* Pods-SwiftNews.release.xcconfig */,
+				AAF81C0F481FCFC175393121 /* Pods-SwiftNewsSpec.debug.xcconfig */,
+				DC18A3EF4ACF5847976C3CAF /* Pods-SwiftNewsSpec.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -206,9 +206,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		271F39101DBC06D5001EB6D9 /* iOSProjectStarter */ = {
+		271F39101DBC06D5001EB6D9 /* SwiftNews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 271F392E1DBC06D6001EB6D9 /* Build configuration list for PBXNativeTarget "iOSProjectStarter" */;
+			buildConfigurationList = 271F392E1DBC06D6001EB6D9 /* Build configuration list for PBXNativeTarget "SwiftNews" */;
 			buildPhases = (
 				94A4DB0A7BB72AA69F9DAB27 /* [CP] Check Pods Manifest.lock */,
 				271F390D1DBC06D5001EB6D9 /* Sources */,
@@ -223,14 +223,14 @@
 			);
 			dependencies = (
 			);
-			name = iOSProjectStarter;
-			productName = iOSProjectStarter;
-			productReference = 271F39111DBC06D6001EB6D9 /* iOSProjectStarter.app */;
+			name = SwiftNews;
+			productName = SwiftNews;
+			productReference = 271F39111DBC06D6001EB6D9 /* SwiftNews.app */;
 			productType = "com.apple.product-type.application";
 		};
-		271F39241DBC06D6001EB6D9 /* iOSProjectStarterSpec */ = {
+		271F39241DBC06D6001EB6D9 /* SwiftNewsSpec */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 271F39311DBC06D6001EB6D9 /* Build configuration list for PBXNativeTarget "iOSProjectStarterSpec" */;
+			buildConfigurationList = 271F39311DBC06D6001EB6D9 /* Build configuration list for PBXNativeTarget "SwiftNewsSpec" */;
 			buildPhases = (
 				A9546BDDDF65FEE831432A6B /* [CP] Check Pods Manifest.lock */,
 				271F39211DBC06D6001EB6D9 /* Sources */,
@@ -244,9 +244,9 @@
 			dependencies = (
 				271F39271DBC06D6001EB6D9 /* PBXTargetDependency */,
 			);
-			name = iOSProjectStarterSpec;
-			productName = iOSProjectStarterTests;
-			productReference = 271F39251DBC06D6001EB6D9 /* iOSProjectStarterSpec.xctest */;
+			name = SwiftNewsSpec;
+			productName = SwiftNewsTests;
+			productReference = 271F39251DBC06D6001EB6D9 /* SwiftNewsSpec.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -270,7 +270,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 271F390C1DBC06D5001EB6D9 /* Build configuration list for PBXProject "iOSProjectStarter" */;
+			buildConfigurationList = 271F390C1DBC06D5001EB6D9 /* Build configuration list for PBXProject "SwiftNews" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -283,8 +283,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				271F39101DBC06D5001EB6D9 /* iOSProjectStarter */,
-				271F39241DBC06D6001EB6D9 /* iOSProjectStarterSpec */,
+				271F39101DBC06D5001EB6D9 /* SwiftNews */,
+				271F39241DBC06D6001EB6D9 /* SwiftNewsSpec */,
 			);
 		};
 /* End PBXProject section */
@@ -348,7 +348,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSProjectStarterSpec/Pods-iOSProjectStarterSpec-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNewsSpec/Pods-SwiftNewsSpec-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94A4DB0A7BB72AA69F9DAB27 /* [CP] Check Pods Manifest.lock */ = {
@@ -393,7 +393,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSProjectStarterSpec/Pods-iOSProjectStarterSpec-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNewsSpec/Pods-SwiftNewsSpec-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B04F9AE6249160F40AE50690 /* [CP] Copy Pods Resources */ = {
@@ -408,7 +408,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSProjectStarter/Pods-iOSProjectStarter-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNews/Pods-SwiftNews-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FAAF9C4190882BE4A2C1F24E /* [CP] Embed Pods Frameworks */ = {
@@ -423,7 +423,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSProjectStarter/Pods-iOSProjectStarter-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNews/Pods-SwiftNews-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -452,7 +452,7 @@
 /* Begin PBXTargetDependency section */
 		271F39271DBC06D6001EB6D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 271F39101DBC06D5001EB6D9 /* iOSProjectStarter */;
+			target = 271F39101DBC06D5001EB6D9 /* SwiftNews */;
 			targetProxy = 271F39261DBC06D6001EB6D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -553,12 +553,12 @@
 		};
 		271F392F1DBC06D6001EB6D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C4180C9B11A4686AF1ECC41 /* Pods-iOSProjectStarter.debug.xcconfig */;
+			baseConfigurationReference = 6C4180C9B11A4686AF1ECC41 /* Pods-SwiftNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = iOSProjectStarter/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = SwiftNews/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cookies.iOSProjectStarter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookies.SwiftNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 3.0;
@@ -568,12 +568,12 @@
 		};
 		271F39301DBC06D6001EB6D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63ED7FAFCD0D8792F1814A91 /* Pods-iOSProjectStarter.release.xcconfig */;
+			baseConfigurationReference = 63ED7FAFCD0D8792F1814A91 /* Pods-SwiftNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = iOSProjectStarter/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = SwiftNews/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cookies.iOSProjectStarter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookies.SwiftNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 3.0;
@@ -583,38 +583,38 @@
 		};
 		271F39321DBC06D6001EB6D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAF81C0F481FCFC175393121 /* Pods-iOSProjectStarterSpec.debug.xcconfig */;
+			baseConfigurationReference = AAF81C0F481FCFC175393121 /* Pods-SwiftNewsSpec.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = iOSProjectStarterSpec/Info.plist;
+				INFOPLIST_FILE = SwiftNewsSpec/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cookies.iOSProjectStarterTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookies.SwiftNewsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSProjectStarter.app/iOSProjectStarter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftNews.app/SwiftNews";
 			};
 			name = Debug;
 		};
 		271F39331DBC06D6001EB6D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC18A3EF4ACF5847976C3CAF /* Pods-iOSProjectStarterSpec.release.xcconfig */;
+			baseConfigurationReference = DC18A3EF4ACF5847976C3CAF /* Pods-SwiftNewsSpec.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = iOSProjectStarterSpec/Info.plist;
+				INFOPLIST_FILE = SwiftNewsSpec/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cookies.iOSProjectStarterTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookies.SwiftNewsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSProjectStarter.app/iOSProjectStarter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftNews.app/SwiftNews";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		271F390C1DBC06D5001EB6D9 /* Build configuration list for PBXProject "iOSProjectStarter" */ = {
+		271F390C1DBC06D5001EB6D9 /* Build configuration list for PBXProject "SwiftNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				271F392C1DBC06D6001EB6D9 /* Debug */,
@@ -623,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		271F392E1DBC06D6001EB6D9 /* Build configuration list for PBXNativeTarget "iOSProjectStarter" */ = {
+		271F392E1DBC06D6001EB6D9 /* Build configuration list for PBXNativeTarget "SwiftNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				271F392F1DBC06D6001EB6D9 /* Debug */,
@@ -632,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		271F39311DBC06D6001EB6D9 /* Build configuration list for PBXNativeTarget "iOSProjectStarterSpec" */ = {
+		271F39311DBC06D6001EB6D9 /* Build configuration list for PBXNativeTarget "SwiftNewsSpec" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				271F39321DBC06D6001EB6D9 /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  TestSpec.swift
-//  iOSProjectStarter
+//  SwiftNews
 //
 //  Created by Mike Mikina on 10/24/16.
 //  Copyright © 2016 SwiftCookies.com. All rights reserved.
