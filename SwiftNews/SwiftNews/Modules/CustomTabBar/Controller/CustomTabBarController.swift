@@ -10,7 +10,7 @@ import UIKit
 
 class CustomTabBarController: UIViewController {
 
-  var tabBarControllerView: UIView?
+  var tabBarControllerView: TabBarContainerView?
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -19,6 +19,6 @@ class CustomTabBarController: UIViewController {
   }
 
   func setupView() {
-    self.tabBarControllerView = UIView()
+    self.tabBarControllerView = TabBarContainerView(parentView: self.view)
   }
 }

@@ -5,6 +5,7 @@ PODS:
   - Nimble (5.0.0)
   - Quick (0.10.0)
   - Reveal-iOS-SDK (1.6.2)
+  - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - Crashlytics
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - Nimble
   - Quick
   - Reveal-iOS-SDK
+  - SnapKit
 
 SPEC CHECKSUMS:
   Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
@@ -19,7 +21,8 @@ SPEC CHECKSUMS:
   Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
   Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: bd6a490373f9425efae2873b4ee6be50cffdcfe8
+PODFILE CHECKSUM: 58f93c5cd97c52f4995ad1dba8288e66397b745a
 
 COCOAPODS: 1.1.1
