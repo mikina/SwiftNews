@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CustomTabBar {
+  var customTabBarItem: TabBarItem?
 
   override func viewDidLoad() {
     super.viewDidLoad()

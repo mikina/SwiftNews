@@ -12,6 +12,7 @@ class CustomTabBarController: UIViewController {
 
   var tabBarContainerView: TabBarContainerView?
   var activeViewController: UIViewController?
+  var viewControllers: [CustomTabBar] = []
 
   override func viewDidLoad() {
     super.viewDidLoad()

@@ -86,6 +86,35 @@ class CustomTabBarControllerSpec: QuickSpec {
           expect(sut.childViewControllers.count).to(equal(1))
         }
       }
+      
+      context("add three CustomTabBar items") {
+        beforeEach() {
+          sut = CustomTabBarController()
+          _ = sut.view
+          
+          let vc1 = ViewController()
+          let home = TabBarItem(icon: "home", type: .normal, backgroundColor: UIColor.white)
+          vc1.customTabBarItem = home
+          
+          let vc2 = ViewController()
+          let latest = TabBarItem(icon: "latest", type: .normal, backgroundColor: UIColor.white)
+          vc2.customTabBarItem = latest
+          
+          let vc3 = ViewController()
+          let settings = TabBarItem(icon: "settings", type: .normal, backgroundColor: UIColor.white)
+          vc3.customTabBarItem = settings
+          
+          sut.viewControllers = [vc1, vc2, vc3]
+        }
+        
+        afterEach {
+          sut = nil
+        }
+        
+        it("should have one child view") {
+          expect(sut.viewControllers.count).to(equal(3))
+        }
+      }
     }
   }
 }
