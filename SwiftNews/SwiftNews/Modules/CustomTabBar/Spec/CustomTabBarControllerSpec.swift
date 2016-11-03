@@ -28,7 +28,7 @@ class CustomTabBarControllerSpec: QuickSpec {
         }
 
         it("should have tab bar controller view") {
-          expect(sut.tabBarControllerView).toNot(beNil())
+          expect(sut.tabBarContainerView).toNot(beNil())
         }
 
         it("should have tab bar controller view as a subview") {
@@ -37,7 +37,7 @@ class CustomTabBarControllerSpec: QuickSpec {
         }
 
         it("should have white tab bar controller view") {
-          expect(sut.tabBarControllerView?.backgroundColor).to(equal(UIColor.white))
+          expect(sut.tabBarContainerView?.backgroundColor).to(equal(UIColor.white))
         }
       }
     }
@@ -59,7 +59,7 @@ class CustomTabBarControllerSpec: QuickSpec {
         }
         
         it("should have subviews") {
-          expect(sut.tabBarControllerView?.subviews.count).toNot(equal(0))
+          expect(sut.tabBarContainerView?.subviews.count).toNot(equal(0))
         }
         
         it("should have child views") {

@@ -10,7 +10,7 @@ import UIKit
 
 class CustomTabBarController: UIViewController {
 
-  var tabBarControllerView: TabBarContainerView?
+  var tabBarContainerView: TabBarContainerView?
   var activeViewController: UIViewController?
 
   override func viewDidLoad() {
@@ -20,7 +20,7 @@ class CustomTabBarController: UIViewController {
   }
 
   func setupView() {
-    self.tabBarControllerView = TabBarContainerView(parentView: self.view)
+    self.tabBarContainerView = TabBarContainerView(parentView: self.view)
   }
 
   func showViewController(viewController: UIViewController) {
@@ -29,7 +29,7 @@ class CustomTabBarController: UIViewController {
     }
 
     self.addChildViewController(viewController)
-    if let container = self.tabBarControllerView {
+    if let container = self.tabBarContainerView {
       viewController.view.frame = container.bounds
       container.addSubview(viewController.view)
     }
