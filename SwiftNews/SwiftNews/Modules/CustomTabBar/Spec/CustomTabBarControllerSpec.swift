@@ -41,5 +41,51 @@ class CustomTabBarControllerSpec: QuickSpec {
         }
       }
     }
+    
+    describe("to tab bar") {
+      var sut: CustomTabBarController!
+      
+      context("add view controller") {
+        beforeEach() {
+          sut = CustomTabBarController()
+          _ = sut.view
+          
+          let vc = ViewController()
+          sut.showViewController(viewController: vc)
+        }
+
+        afterEach {
+          sut = nil
+        }
+        
+        it("should have subviews") {
+          expect(sut.tabBarControllerView?.subviews.count).toNot(equal(0))
+        }
+        
+        it("should have child views") {
+          expect(sut.childViewControllers.count).toNot(equal(0))
+        }
+      }
+      
+      context("add two view controllers") {
+        beforeEach() {
+          sut = CustomTabBarController()
+          _ = sut.view
+          
+          let vc = ViewController()
+          sut.showViewController(viewController: vc)
+          let additional = UIViewController()
+          sut.showViewController(viewController: additional)
+        }
+        
+        afterEach {
+          sut = nil
+        }
+        
+        it("should have one child view") {
+          expect(sut.childViewControllers.count).to(equal(1))
+        }
+      }
+    }
   }
 }
