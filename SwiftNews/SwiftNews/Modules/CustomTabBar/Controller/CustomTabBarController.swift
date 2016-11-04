@@ -18,6 +18,7 @@ class CustomTabBarController: UIViewController {
     super.viewDidLoad()
 
     self.setupView()
+    self.tabBarSelected(position: 0)
   }
 
   func setupView() {
@@ -42,5 +43,13 @@ class CustomTabBarController: UIViewController {
     self.activeViewController?.willMove(toParentViewController: nil)
     self.activeViewController?.view.removeFromSuperview()
     self.activeViewController?.removeFromParentViewController()
+  }
+
+  func tabBarSelected(position: Int) {
+    if(position <= self.viewControllers.count && !self.viewControllers.isEmpty) {
+      if let vc = self.viewControllers[position] as? UIViewController {
+        self.showViewController(viewController: vc)
+      }
+    }
   }
 }

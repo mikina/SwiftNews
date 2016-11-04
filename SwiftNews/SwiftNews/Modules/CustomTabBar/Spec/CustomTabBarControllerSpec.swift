@@ -116,5 +116,48 @@ class CustomTabBarControllerSpec: QuickSpec {
         }
       }
     }
+    
+    describe("tab bar have 3 items") {
+      var sut: CustomTabBarController!
+      
+      beforeEach() {
+        sut = CustomTabBarController()
+        
+        let vc1 = ViewController()
+        vc1.title = "home"
+        let home = TabBarItem(icon: "home", type: .normal, backgroundColor: UIColor.white)
+        vc1.customTabBarItem = home
+        
+        let vc2 = ViewController()
+        vc2.title = "latest"
+        let latest = TabBarItem(icon: "latest", type: .normal, backgroundColor: UIColor.white)
+        vc2.customTabBarItem = latest
+        
+        let vc3 = ViewController()
+        vc3.title = "settings"
+        let settings = TabBarItem(icon: "settings", type: .normal, backgroundColor: UIColor.white)
+        vc3.customTabBarItem = settings
+        
+        sut.viewControllers = [vc1, vc2, vc3]
+        _ = sut.view
+      }
+      
+      afterEach {
+        sut = nil
+      }
+      
+      context("without action, first item should be selected") {
+        it("active view controller should have title home") {
+          expect(sut.activeViewController?.title).to(equal("home"))
+        }
+      }
+      
+      context("if second item is selected") {
+        it("active view controller should have title latest") {
+          sut.tabBarSelected(position: 1)
+          expect(sut.activeViewController?.title).to(equal("latest"))
+        }
+      }
+    }
   }
 }
