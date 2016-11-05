@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import UIColor_Hex_Swift
 
 class TabBarView: UIView {
   var parentView: UIView?
@@ -37,7 +38,18 @@ class TabBarView: UIView {
 
   func setupView() {
     self.translatesAutoresizingMaskIntoConstraints = false
-    self.backgroundColor = UIColor.red
+    self.backgroundColor = UIColor.white
+
+    //add top border
+    let topBorder = UIView()
+    topBorder.backgroundColor = UIColor(Constants.TabBar.TopBorderColor)
+    self.addSubview(topBorder)
+    topBorder.snp.makeConstraints { (make) -> Void in
+      make.left.equalTo(self)
+      make.right.equalTo(self)
+      make.top.equalTo(self)
+      make.height.equalTo(Constants.TabBar.TopBorderHeight)
+    }
 
     if let parentView = self.parentView {
       parentView.addSubview(self)

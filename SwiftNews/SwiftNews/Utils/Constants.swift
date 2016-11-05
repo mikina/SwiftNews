@@ -10,6 +10,8 @@ import Foundation
 
 struct Constants {
   struct TabBar {
-    static let Height = 44
+    static let Height = 45
+    static let TopBorderColor = "#CECFD0"
+    static let TopBorderHeight = 1
   }
 }
