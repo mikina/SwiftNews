@@ -11,6 +11,7 @@ import UIKit
 class CustomTabBarController: UIViewController {
 
   var tabBarContainerView: TabBarContainerView?
+  var tabBarView: TabBarView?
   var activeViewController: UIViewController?
   var viewControllers: [CustomTabBar] = []
 
@@ -23,6 +24,7 @@ class CustomTabBarController: UIViewController {
 
   func setupView() {
     self.tabBarContainerView = TabBarContainerView(parentView: self.view)
+    self.tabBarView = TabBarView(parentView: self.view, viewControllers: self.viewControllers)
   }
 
   func showViewController(viewController: UIViewController) {

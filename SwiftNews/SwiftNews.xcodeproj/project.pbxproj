@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2703E3071DCD310C000ABB2B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703E3061DCD310C000ABB2B /* TabBarView.swift */; };
 		2712F4261DBEB4800088845B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2712F4251DBEB4800088845B /* ViewController.xib */; };
 		2712F4281DBEB8BF0088845B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712F4271DBEB8BF0088845B /* main.swift */; };
 		2712F42A1DBEBA720088845B /* TestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712F4291DBEBA720088845B /* TestSpec.swift */; };
@@ -14,6 +15,7 @@
 		27215D9D1DBD100C00BCEA51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27215D9C1DBD100C00BCEA51 /* ViewController.swift */; };
 		27215DA41DBD136B00BCEA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27215DA31DBD136B00BCEA51 /* Assets.xcassets */; };
 		27215DA61DBD137D00BCEA51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27215DA51DBD137D00BCEA51 /* LaunchScreen.storyboard */; };
+		2759B4E31DCE52D100A6F646 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759B4E21DCE52D100A6F646 /* Constants.swift */; };
 		276A6DD51DC7F16C0060B699 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A6DD31DC7F16C0060B699 /* CustomTabBarController.swift */; };
 		27A243EE1DC93BE200CB539B /* CustomTabBarControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A243EC1DC93B2400CB539B /* CustomTabBarControllerSpec.swift */; };
 		27ACE9401DCBD8FA00C66A25 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ACE93F1DCBD8FA00C66A25 /* CustomTabBar.swift */; };
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2703E3061DCD310C000ABB2B /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		2712F4251DBEB4800088845B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		2712F4271DBEB8BF0088845B /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2712F4291DBEBA720088845B /* TestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSpec.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		27215DA31DBD136B00BCEA51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27215DA51DBD137D00BCEA51 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27215DA71DBD139C00BCEA51 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2759B4E21DCE52D100A6F646 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		276A6DD31DC7F16C0060B699 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		27A243EC1DC93B2400CB539B /* CustomTabBarControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarControllerSpec.swift; sourceTree = "<group>"; };
 		27ACE93F1DCBD8FA00C66A25 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 		27215D921DBD0D2D00BCEA51 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2759B4E21DCE52D100A6F646 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				27BCB1941DCA8738000F715E /* TabBarContainerView.swift */,
+				2703E3061DCD310C000ABB2B /* TabBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -490,11 +496,13 @@
 			files = (
 				27215D9D1DBD100C00BCEA51 /* ViewController.swift in Sources */,
 				27BCB1951DCA8738000F715E /* TabBarContainerView.swift in Sources */,
+				2703E3071DCD310C000ABB2B /* TabBarView.swift in Sources */,
 				27215D9A1DBD0FB900BCEA51 /* AppDelegate.swift in Sources */,
 				276A6DD51DC7F16C0060B699 /* CustomTabBarController.swift in Sources */,
 				27ACE9421DCBD95000C66A25 /* TabBarItem.swift in Sources */,
 				27ACE9401DCBD8FA00C66A25 /* CustomTabBar.swift in Sources */,
 				2712F4281DBEB8BF0088845B /* main.swift in Sources */,
+				2759B4E31DCE52D100A6F646 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
