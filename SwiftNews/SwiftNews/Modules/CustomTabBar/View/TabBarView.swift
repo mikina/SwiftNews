@@ -61,6 +61,8 @@ class TabBarView: UIView {
         self.heightConstraint = make.height.equalTo(self.height).constraint
       }
     }
+
+    _ = TabBarButtonsView(parentView: self, viewControllers: self.viewControllers)
   }
 
   func setViewHeight(height: Int) {

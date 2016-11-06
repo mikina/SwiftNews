@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2703E3071DCD310C000ABB2B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703E3061DCD310C000ABB2B /* TabBarView.swift */; };
+		2709FC191DCE7C4200F8DD36 /* TabBarButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2709FC181DCE7C4200F8DD36 /* TabBarButtonsView.swift */; };
+		2709FC1B1DCEA55700F8DD36 /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2709FC1A1DCEA55700F8DD36 /* TabBarItemView.swift */; };
 		2712F4261DBEB4800088845B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2712F4251DBEB4800088845B /* ViewController.xib */; };
 		2712F4281DBEB8BF0088845B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712F4271DBEB8BF0088845B /* main.swift */; };
 		2712F42A1DBEBA720088845B /* TestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712F4291DBEBA720088845B /* TestSpec.swift */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		2703E3061DCD310C000ABB2B /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		2709FC181DCE7C4200F8DD36 /* TabBarButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButtonsView.swift; sourceTree = "<group>"; };
+		2709FC1A1DCEA55700F8DD36 /* TabBarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
 		2712F4251DBEB4800088845B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		2712F4271DBEB8BF0088845B /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2712F4291DBEBA720088845B /* TestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSpec.swift; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 			children = (
 				27BCB1941DCA8738000F715E /* TabBarContainerView.swift */,
 				2703E3061DCD310C000ABB2B /* TabBarView.swift */,
+				2709FC181DCE7C4200F8DD36 /* TabBarButtonsView.swift */,
+				2709FC1A1DCEA55700F8DD36 /* TabBarItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -500,6 +506,8 @@
 				27215D9A1DBD0FB900BCEA51 /* AppDelegate.swift in Sources */,
 				276A6DD51DC7F16C0060B699 /* CustomTabBarController.swift in Sources */,
 				27ACE9421DCBD95000C66A25 /* TabBarItem.swift in Sources */,
+				2709FC191DCE7C4200F8DD36 /* TabBarButtonsView.swift in Sources */,
+				2709FC1B1DCEA55700F8DD36 /* TabBarItemView.swift in Sources */,
 				27ACE9401DCBD8FA00C66A25 /* CustomTabBar.swift in Sources */,
 				2712F4281DBEB8BF0088845B /* main.swift in Sources */,
 				2759B4E31DCE52D100A6F646 /* Constants.swift in Sources */,

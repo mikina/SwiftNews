@@ -19,6 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window = UIWindow(frame: UIScreen.main.bounds)
 
     let mainVC = CustomTabBarController()
+
+    let latestNews = ViewController()
+    latestNews.customTabBarItem = TabBarItem(icon: "latest_news", type: .normal, backgroundColor: UIColor.white)
+
+    mainVC.viewControllers = [latestNews]
     self.window?.rootViewController = mainVC
     self.window?.makeKeyAndVisible()
 

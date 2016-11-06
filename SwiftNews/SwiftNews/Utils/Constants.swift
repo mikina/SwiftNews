@@ -13,5 +13,6 @@ struct Constants {
     static let Height = 45
     static let TopBorderColor = "#CECFD0"
     static let TopBorderHeight = 1
+    static let DefaultButtonColor = "#ABA5A6"
   }
 }
