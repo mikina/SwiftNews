@@ -44,5 +44,7 @@ class TabBarItemView: UIView, CustomTabBar {
     let icon = UIImage(named: item.icon)?.withRenderingMode(.alwaysTemplate)
     button.setImage(icon, for: UIControlState())
     button.tintColor = UIColor(Constants.TabBar.DefaultButtonColor)
+
+    self.backgroundColor = item.backgroundColor
   }
 }

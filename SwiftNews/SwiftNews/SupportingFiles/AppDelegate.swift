@@ -23,7 +23,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let latestNews = ViewController()
     latestNews.customTabBarItem = TabBarItem(icon: "latest_news", type: .normal, backgroundColor: UIColor.white)
 
-    mainVC.viewControllers = [latestNews]
+    let categories = ViewController()
+    categories.customTabBarItem = TabBarItem(icon: "categories", type: .normal, backgroundColor: UIColor.white)
+
+    let liveFeed = ViewController()
+    liveFeed.customTabBarItem = TabBarItem(icon: "live_feed", type: .spike, backgroundColor: UIColor("#F90038"))
+
+    let featured = ViewController()
+    featured.customTabBarItem = TabBarItem(icon: "featured", type: .normal, backgroundColor: UIColor.white)
+
+    let favorites = ViewController()
+    favorites.customTabBarItem = TabBarItem(icon: "favorites", type: .normal, backgroundColor: UIColor.white)
+
+    mainVC.viewControllers = [latestNews, categories, liveFeed, featured, favorites]
     self.window?.rootViewController = mainVC
     self.window?.makeKeyAndVisible()
 

@@ -65,9 +65,73 @@ class TabBarButtonsView: UIView {
   }
 
   func layoutButtons() {
-    if let item = self.tabBarItemViews.first, self.tabBarItemViews.count == 1 {
-      item.snp.makeConstraints({ (make) -> Void in
-        make.edges.equalTo(self)
+    if self.tabBarItemViews.isEmpty {
+      return
+    }
+
+    self.pinTopAndBottom()
+    self.pinSides()
+    self.pinEdges()
+    self.applySizes()
+    self.applySizesForSpikes()
+  }
+
+  func pinTopAndBottom() {
+    for element in self.tabBarItemViews {
+      element.snp.makeConstraints({ (make) -> Void in
+        if element.customTabBarItem?.type != .spike {
+          make.top.equalTo(self)
+        }
+
+        make.bottom.equalTo(self)
+      })
+    }
+  }
+
+  func pinSides() {
+    var previousElement: TabBarItemView?
+    for element in self.tabBarItemViews {
+      previousElement?.snp.makeConstraints({ (make) -> Void in
+        make.trailing.equalTo(element.snp.leading)
+      })
+      previousElement = element
+    }
+  }
+
+  func pinEdges() {
+    let firstItem = self.tabBarItemViews.first
+    firstItem?.snp.makeConstraints({ (make) -> Void in
+      make.left.equalTo(self)
+    })
+
+    let lastItem = self.tabBarItemViews.last
+    lastItem?.snp.makeConstraints({ (make) -> Void in
+      make.right.equalTo(self)
+    })
+  }
+
+  func applySizes() {
+    var previousElement: TabBarItemView?
+    for element in self.tabBarItemViews where element.customTabBarItem?.type == .normal {
+      previousElement?.snp.makeConstraints({ (make) -> Void in
+        make.width.equalTo(element.snp.width)
+        make.height.equalTo(element.snp.height)
+      })
+      previousElement = element
+    }
+  }
+
+  func applySizesForSpikes() {
+    let normalElement: TabBarItemView? = self.tabBarItemViews.first(where: {$0.customTabBarItem?.type == .normal})
+
+    guard let normal = normalElement else {
+      return
+    }
+
+    for element in self.tabBarItemViews where element.customTabBarItem?.type == .spike {
+      element.snp.makeConstraints({ (make) -> Void in
+        make.width.equalTo(normal.snp.width).multipliedBy(1.2)
+        make.height.equalTo(normal.snp.height).multipliedBy(1.2)
       })
     }
   }
