@@ -18,6 +18,7 @@
 		27215DA41DBD136B00BCEA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27215DA31DBD136B00BCEA51 /* Assets.xcassets */; };
 		27215DA61DBD137D00BCEA51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27215DA51DBD137D00BCEA51 /* LaunchScreen.storyboard */; };
 		2759B4E31DCE52D100A6F646 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759B4E21DCE52D100A6F646 /* Constants.swift */; };
+		276071F11DD2587600ADD6EC /* TabBarItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276071F01DD2587600ADD6EC /* TabBarItemDelegate.swift */; };
 		276A6DD51DC7F16C0060B699 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A6DD31DC7F16C0060B699 /* CustomTabBarController.swift */; };
 		27A243EE1DC93BE200CB539B /* CustomTabBarControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A243EC1DC93B2400CB539B /* CustomTabBarControllerSpec.swift */; };
 		27ACE9401DCBD8FA00C66A25 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ACE93F1DCBD8FA00C66A25 /* CustomTabBar.swift */; };
@@ -53,6 +54,7 @@
 		27215DA51DBD137D00BCEA51 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27215DA71DBD139C00BCEA51 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2759B4E21DCE52D100A6F646 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		276071F01DD2587600ADD6EC /* TabBarItemDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemDelegate.swift; sourceTree = "<group>"; };
 		276A6DD31DC7F16C0060B699 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		27A243EC1DC93B2400CB539B /* CustomTabBarControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarControllerSpec.swift; sourceTree = "<group>"; };
 		27ACE93F1DCBD8FA00C66A25 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			children = (
 				27ACE93F1DCBD8FA00C66A25 /* CustomTabBar.swift */,
 				27ACE9411DCBD95000C66A25 /* TabBarItem.swift */,
+				276071F01DD2587600ADD6EC /* TabBarItemDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				2709FC191DCE7C4200F8DD36 /* TabBarButtonsView.swift in Sources */,
 				2709FC1B1DCEA55700F8DD36 /* TabBarItemView.swift in Sources */,
 				27ACE9401DCBD8FA00C66A25 /* CustomTabBar.swift in Sources */,
+				276071F11DD2587600ADD6EC /* TabBarItemDelegate.swift in Sources */,
 				2712F4281DBEB8BF0088845B /* main.swift in Sources */,
 				2759B4E31DCE52D100A6F646 /* Constants.swift in Sources */,
 			);

@@ -12,6 +12,7 @@ class TabBarItemView: UIView, CustomTabBar {
 
   var customTabBarItem: TabBarItem?
   var position: Int?
+  var delegate: TabBarItemDelegate?
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -35,6 +36,7 @@ class TabBarItemView: UIView, CustomTabBar {
     }
 
     let button = UIButton()
+    button.addTarget(self, action: #selector(TabBarItemView.clickButton), for: .touchUpInside)
     self.addSubview(button)
     button.snp.makeConstraints { (make) -> Void in
       make.edges.equalTo(self)
@@ -46,5 +48,11 @@ class TabBarItemView: UIView, CustomTabBar {
     button.tintColor = UIColor(Constants.TabBar.DefaultButtonColor)
 
     self.backgroundColor = item.backgroundColor
+  }
+
+  func clickButton(sender: UIButton) {
+    if let number = self.position {
+      self.delegate?.tabBarSelected(position: number)
+    }
   }
 }

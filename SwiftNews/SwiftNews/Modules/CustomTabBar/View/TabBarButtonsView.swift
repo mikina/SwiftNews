@@ -8,10 +8,11 @@
 
 import UIKit
 
-class TabBarButtonsView: UIView {
+class TabBarButtonsView: UIView, TabBarItemDelegate {
   var parentView: UIView?
   var viewControllers: [CustomTabBar] = []
   var tabBarItemViews: [TabBarItemView] = []
+  var delegate: TabBarItemDelegate?
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -56,6 +57,7 @@ class TabBarButtonsView: UIView {
       item.translatesAutoresizingMaskIntoConstraints = false
       item.customTabBarItem = customTabBar
       item.position = i
+      item.delegate = self
       self.addSubview(item)
       self.tabBarItemViews.append(item)
       i += 1
@@ -134,5 +136,9 @@ class TabBarButtonsView: UIView {
         make.height.equalTo(normal.snp.height).multipliedBy(1.2)
       })
     }
+  }
+
+  func tabBarSelected(position: Int) {
+    self.delegate?.tabBarSelected(position: position)
   }
 }

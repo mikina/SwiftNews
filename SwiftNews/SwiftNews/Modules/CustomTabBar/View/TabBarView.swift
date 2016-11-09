@@ -10,10 +10,11 @@ import UIKit
 import SnapKit
 import UIColor_Hex_Swift
 
-class TabBarView: UIView {
+class TabBarView: UIView, TabBarItemDelegate {
   var parentView: UIView?
   var heightConstraint: Constraint? = nil
   var viewControllers: [CustomTabBar] = []
+  var delegate: TabBarItemDelegate?
 
   var height: Int = Constants.TabBar.Height {
     didSet {
@@ -62,10 +63,15 @@ class TabBarView: UIView {
       }
     }
 
-    _ = TabBarButtonsView(parentView: self, viewControllers: self.viewControllers)
+    let buttonsView = TabBarButtonsView(parentView: self, viewControllers: self.viewControllers)
+    buttonsView.delegate = self
   }
 
   func setViewHeight(height: Int) {
     self.heightConstraint?.update(offset: height)
+  }
+
+  func tabBarSelected(position: Int) {
+    self.delegate?.tabBarSelected(position: position)
   }
 }

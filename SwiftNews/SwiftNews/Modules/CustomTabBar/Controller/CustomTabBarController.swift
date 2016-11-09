@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomTabBarController: UIViewController {
+class CustomTabBarController: UIViewController, TabBarItemDelegate {
 
   var tabBarContainerView: TabBarContainerView?
   var tabBarView: TabBarView?
@@ -25,6 +25,7 @@ class CustomTabBarController: UIViewController {
   func setupView() {
     self.tabBarContainerView = TabBarContainerView(parentView: self.view)
     self.tabBarView = TabBarView(parentView: self.view, viewControllers: self.viewControllers)
+    self.tabBarView?.delegate = self
   }
 
   func showViewController(viewController: UIViewController) {
