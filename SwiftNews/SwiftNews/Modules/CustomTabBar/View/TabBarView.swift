@@ -15,6 +15,7 @@ class TabBarView: UIView, TabBarItemDelegate {
   var heightConstraint: Constraint? = nil
   var viewControllers: [CustomTabBar] = []
   var delegate: TabBarItemDelegate?
+  var buttonsView: TabBarButtonsView?
 
   var height: Int = Constants.TabBar.Height {
     didSet {
@@ -63,8 +64,8 @@ class TabBarView: UIView, TabBarItemDelegate {
       }
     }
 
-    let buttonsView = TabBarButtonsView(parentView: self, viewControllers: self.viewControllers)
-    buttonsView.delegate = self
+    self.buttonsView = TabBarButtonsView(parentView: self, viewControllers: self.viewControllers)
+    self.buttonsView?.delegate = self
   }
 
   func setViewHeight(height: Int) {
@@ -73,5 +74,9 @@ class TabBarView: UIView, TabBarItemDelegate {
 
   func tabBarSelected(position: Int) {
     self.delegate?.tabBarSelected(position: position)
+  }
+
+  func setSelectedTab(index: Int) {
+    self.buttonsView?.setSelectedTab(index: index)
   }
 }

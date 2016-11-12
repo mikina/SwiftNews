@@ -14,5 +14,8 @@ struct Constants {
     static let TopBorderColor = "#CECFD0"
     static let TopBorderHeight = 1
     static let DefaultButtonColor = "#ABA5A6"
+    static let DefaultSelectedButtonColor = "#4A4A4A"
+    static let SpikeButtonColor = "#FFFFFF"
+    static let SpikeSelectedButtonColor = "#F8E71C"
   }
 }

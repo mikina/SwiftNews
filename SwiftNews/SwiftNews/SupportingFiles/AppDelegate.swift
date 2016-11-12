@@ -21,26 +21,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let mainVC = CustomTabBarController()
 
     let latestNews = ViewController()
-    latestNews.customTabBarItem = TabBarItem(icon: "latest_news", type: .normal, backgroundColor: UIColor.white)
+    let latestNewsItem = TabBarItemBuilder { builder in
+      builder.icon = "latest_news"
+      builder.type = .normal
+      builder.backgroundColor = UIColor.white
+      builder.iconColor = UIColor(Constants.TabBar.DefaultButtonColor)
+      builder.selectedIconColor = UIColor(Constants.TabBar.DefaultSelectedButtonColor)
+    }
+    latestNews.customTabBarItem = TabBarItem(builder: latestNewsItem)
     latestNews.title = "Latest news"
 
     let categories = ViewController()
-    categories.customTabBarItem = TabBarItem(icon: "categories", type: .normal, backgroundColor: UIColor.white)
+    let categoriesItem = TabBarItemBuilder { builder in
+      builder.icon = "categories"
+      builder.type = .normal
+      builder.backgroundColor = UIColor.white
+      builder.iconColor = UIColor(Constants.TabBar.DefaultButtonColor)
+      builder.selectedIconColor = UIColor(Constants.TabBar.DefaultSelectedButtonColor)
+    }
+    categories.customTabBarItem = TabBarItem(builder: categoriesItem)
     categories.title = "Categories"
 
     let liveFeed = ViewController()
-    liveFeed.customTabBarItem = TabBarItem(icon: "live_feed", type: .spike, backgroundColor: UIColor("#F90038"))
+    let liveFeedItem = TabBarItemBuilder { builder in
+      builder.icon = "live_feed"
+      builder.type = .spike
+      builder.backgroundColor = UIColor("#F90038")
+      builder.iconColor = UIColor(Constants.TabBar.SpikeButtonColor)
+      builder.selectedIconColor = UIColor(Constants.TabBar.SpikeSelectedButtonColor)
+    }
+    liveFeed.customTabBarItem = TabBarItem(builder: liveFeedItem)
     liveFeed.title = "Live feed"
 
     let featured = ViewController()
-    featured.customTabBarItem = TabBarItem(icon: "featured", type: .normal, backgroundColor: UIColor.white)
+    let featuredItem = TabBarItemBuilder { builder in
+      builder.icon = "featured"
+      builder.type = .normal
+      builder.backgroundColor = UIColor.white
+      builder.iconColor = UIColor(Constants.TabBar.DefaultButtonColor)
+      builder.selectedIconColor = UIColor(Constants.TabBar.DefaultSelectedButtonColor)
+    }
+    featured.customTabBarItem = TabBarItem(builder: featuredItem)
     featured.title = "Featured"
 
     let favorites = ViewController()
-    favorites.customTabBarItem = TabBarItem(icon: "favorites", type: .normal, backgroundColor: UIColor.white)
+    let favoritesItem = TabBarItemBuilder { builder in
+      builder.icon = "favorites"
+      builder.type = .normal
+      builder.backgroundColor = UIColor.white
+      builder.iconColor = UIColor(Constants.TabBar.DefaultButtonColor)
+      builder.selectedIconColor = UIColor(Constants.TabBar.DefaultSelectedButtonColor)
+    }
+    favorites.customTabBarItem = TabBarItem(builder: favoritesItem)
     favorites.title = "Favorites"
 
     mainVC.viewControllers = [latestNews, categories, liveFeed, featured, favorites]
+
     self.window?.rootViewController = mainVC
     self.window?.makeKeyAndVisible()
 

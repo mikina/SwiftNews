@@ -13,6 +13,19 @@ class TabBarItemView: UIView, CustomTabBar {
   var customTabBarItem: TabBarItem?
   var position: Int?
   var delegate: TabBarItemDelegate?
+  var button: UIButton?
+  var isSelected: Bool {
+    get {
+      return self.isSelected
+    }
+    set(item) {
+      if item {
+        self.button?.tintColor = self.customTabBarItem?.selectedIconColor
+      } else {
+        self.button?.tintColor = self.customTabBarItem?.iconColor
+      }
+    }
+  }
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -31,11 +44,12 @@ class TabBarItemView: UIView, CustomTabBar {
   }
 
   func setupButton() {
-    guard let item = self.customTabBarItem else {
+    self.button = UIButton()
+
+    guard let item = self.customTabBarItem, let button = self.button else {
       return
     }
 
-    let button = UIButton()
     button.addTarget(self, action: #selector(TabBarItemView.clickButton), for: .touchUpInside)
     self.addSubview(button)
     button.snp.makeConstraints { (make) -> Void in
@@ -48,6 +62,7 @@ class TabBarItemView: UIView, CustomTabBar {
     button.tintColor = UIColor(Constants.TabBar.DefaultButtonColor)
 
     self.backgroundColor = item.backgroundColor
+    self.isSelected = false
   }
 
   func clickButton(sender: UIButton) {

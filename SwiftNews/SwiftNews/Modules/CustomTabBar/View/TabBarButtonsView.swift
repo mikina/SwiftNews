@@ -138,6 +138,16 @@ class TabBarButtonsView: UIView, TabBarItemDelegate {
     }
   }
 
+  func setSelectedTab(index: Int) {
+    for item in self.tabBarItemViews {
+      item.isSelected = false
+    }
+
+    if(self.tabBarItemViews.count > index) {
+      self.tabBarItemViews[index].isSelected = true
+    }
+  }
+
   func tabBarSelected(position: Int) {
     self.delegate?.tabBarSelected(position: position)
   }

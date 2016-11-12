@@ -52,6 +52,7 @@ class CustomTabBarController: UIViewController, TabBarItemDelegate {
     if(position <= self.viewControllers.count && !self.viewControllers.isEmpty) {
       if let vc = self.viewControllers[position] as? UIViewController {
         self.showViewController(viewController: vc)
+        self.tabBarView?.setSelectedTab(index: position)
       }
     }
   }
