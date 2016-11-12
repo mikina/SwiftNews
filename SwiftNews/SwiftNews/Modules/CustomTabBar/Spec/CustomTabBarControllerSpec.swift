@@ -93,16 +93,34 @@ class CustomTabBarControllerSpec: QuickSpec {
           _ = sut.view
           
           let vc1 = ViewController()
-          let home = TabBarItem(icon: "home", type: .normal, backgroundColor: UIColor.white)
-          vc1.customTabBarItem = home
+          let home = TabBarItemBuilder { builder in
+            builder.icon = "home"
+            builder.type = .normal
+            builder.backgroundColor = UIColor.white
+            builder.iconColor = UIColor(Constants.TabBar.DefaultButtonColor)
+            builder.selectedIconColor = UIColor(Constants.TabBar.DefaultSelectedButtonColor)
+          }
+          vc1.customTabBarItem = TabBarItem(builder: home)
           
           let vc2 = ViewController()
-          let latest = TabBarItem(icon: "latest", type: .normal, backgroundColor: UIColor.white)
-          vc2.customTabBarItem = latest
+          let latest = TabBarItemBuilder { builder in
+            builder.icon = "latest"
+            builder.type = .normal
+            builder.backgroundColor = UIColor.white
+            builder.iconColor = UIColor(Constants.TabBar.DefaultButtonColor)
+            builder.selectedIconColor = UIColor(Constants.TabBar.DefaultSelectedButtonColor)
+          }
+          vc2.customTabBarItem = TabBarItem(builder: latest)
           
           let vc3 = ViewController()
-          let settings = TabBarItem(icon: "settings", type: .normal, backgroundColor: UIColor.white)
-          vc3.customTabBarItem = settings
+          let settings = TabBarItemBuilder { builder in
+            builder.icon = "settings"
+            builder.type = .normal
+            builder.backgroundColor = UIColor.white
+            builder.iconColor = UIColor(Constants.TabBar.DefaultButtonColor)
+            builder.selectedIconColor = UIColor(Constants.TabBar.DefaultSelectedButtonColor)
+          }
+          vc3.customTabBarItem = TabBarItem(builder: settings)
           
           sut.viewControllers = [vc1, vc2, vc3]
         }
@@ -125,18 +143,36 @@ class CustomTabBarControllerSpec: QuickSpec {
         
         let vc1 = ViewController()
         vc1.title = "home"
-        let home = TabBarItem(icon: "home", type: .normal, backgroundColor: UIColor.white)
-        vc1.customTabBarItem = home
+        let home = TabBarItemBuilder { builder in
+          builder.icon = "home"
+          builder.type = .normal
+          builder.backgroundColor = UIColor.white
+          builder.iconColor = UIColor(Constants.TabBar.DefaultButtonColor)
+          builder.selectedIconColor = UIColor(Constants.TabBar.DefaultSelectedButtonColor)
+        }
+        vc1.customTabBarItem = TabBarItem(builder: home)
         
         let vc2 = ViewController()
         vc2.title = "latest"
-        let latest = TabBarItem(icon: "latest", type: .normal, backgroundColor: UIColor.white)
-        vc2.customTabBarItem = latest
+        let latest = TabBarItemBuilder { builder in
+          builder.icon = "latest"
+          builder.type = .normal
+          builder.backgroundColor = UIColor.white
+          builder.iconColor = UIColor(Constants.TabBar.DefaultButtonColor)
+          builder.selectedIconColor = UIColor(Constants.TabBar.DefaultSelectedButtonColor)
+        }
+        vc2.customTabBarItem = TabBarItem(builder: latest)
         
         let vc3 = ViewController()
         vc3.title = "settings"
-        let settings = TabBarItem(icon: "settings", type: .normal, backgroundColor: UIColor.white)
-        vc3.customTabBarItem = settings
+        let settings = TabBarItemBuilder { builder in
+          builder.icon = "settings"
+          builder.type = .normal
+          builder.backgroundColor = UIColor.white
+          builder.iconColor = UIColor(Constants.TabBar.DefaultButtonColor)
+          builder.selectedIconColor = UIColor(Constants.TabBar.DefaultSelectedButtonColor)
+        }
+        vc3.customTabBarItem = TabBarItem(builder: settings)
         
         sut.viewControllers = [vc1, vc2, vc3]
         _ = sut.view

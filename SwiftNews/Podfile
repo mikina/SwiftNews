@@ -19,5 +19,7 @@ end
 
 target 'SwiftNewsSpec' do
   use_frameworks!
-  testing_pods  
+  testing_pods
+  pod 'SnapKit'
+  pod 'UIColor_Hex_Swift'
 end
