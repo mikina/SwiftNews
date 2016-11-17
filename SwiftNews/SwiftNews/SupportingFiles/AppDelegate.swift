@@ -28,8 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       builder.iconColor = UIColor(Constants.TabBar.DefaultButtonColor)
       builder.selectedIconColor = UIColor(Constants.TabBar.DefaultSelectedButtonColor)
     }
-    latestNews.customTabBarItem = TabBarItem(builder: latestNewsItem)
     latestNews.title = "Latest news"
+    let latestNewsNavigation = CustomNavigationController()
+    latestNewsNavigation.customTabBarItem = TabBarItem(builder: latestNewsItem)
+    latestNewsNavigation.viewControllers = [latestNews]
 
     let categories = ViewController()
     let categoriesItem = TabBarItemBuilder { builder in
@@ -75,7 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     favorites.customTabBarItem = TabBarItem(builder: favoritesItem)
     favorites.title = "Favorites"
 
-    mainVC.viewControllers = [latestNews, categories, liveFeed, featured, favorites]
+    mainVC.viewControllers = [latestNewsNavigation, categories, liveFeed, featured, favorites]
 
     self.window?.rootViewController = mainVC
     self.window?.makeKeyAndVisible()

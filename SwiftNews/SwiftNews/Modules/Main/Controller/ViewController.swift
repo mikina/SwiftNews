@@ -17,9 +17,9 @@ class ViewController: UIViewController, CustomTabBar {
     self.testLabel.text = self.title
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  @IBAction func goAction(_ sender: Any) {
+    let vc = ViewController()
+    vc.title = "Hello again!"
+    self.navigationController?.pushViewController(vc, animated: true)
   }
-
 }

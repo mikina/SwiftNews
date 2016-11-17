@@ -51,9 +51,23 @@ class CustomTabBarController: UIViewController, TabBarItemDelegate {
   func tabBarSelected(position: Int) {
     if(position <= self.viewControllers.count && !self.viewControllers.isEmpty) {
       if let vc = self.viewControllers[position] as? UIViewController {
-        self.showViewController(viewController: vc)
+        self.checkForActiveElement(viewController: vc)
+        self.prepareForShowViewController(viewController: vc)
         self.tabBarView?.setSelectedTab(index: position)
       }
+    }
+  }
+
+  func prepareForShowViewController(viewController: UIViewController) {
+    if(viewController != self.activeViewController) {
+      self.showViewController(viewController: viewController)
+    }
+  }
+
+  func checkForActiveElement(viewController: UIViewController) {
+    if let nav = self.activeViewController as? UINavigationController,
+      nav == viewController {
+      nav.popToRootViewController(animated: true)
     }
   }
 }
