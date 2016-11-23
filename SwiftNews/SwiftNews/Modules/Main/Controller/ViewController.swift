@@ -8,16 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CustomTabBar {
+  var customTabBarItem: TabBarItem?
+  @IBOutlet weak var testLabel: UILabel!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    self.testLabel.text = self.title
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  @IBAction func goAction(_ sender: Any) {
+    let vc = ViewController()
+    vc.title = "Hello again!"
+    self.navigationController?.pushViewController(vc, animated: true)
   }
-
 }

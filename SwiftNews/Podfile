@@ -13,9 +13,13 @@ target 'SwiftNews' do
   pod 'Reveal-iOS-SDK', :configurations => ['Debug']
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'SnapKit'
+  pod 'UIColor_Hex_Swift'
 end
 
 target 'SwiftNewsSpec' do
   use_frameworks!
-  testing_pods  
+  testing_pods
+  pod 'SnapKit'
+  pod 'UIColor_Hex_Swift'
 end

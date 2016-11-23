@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2703E3071DCD310C000ABB2B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703E3061DCD310C000ABB2B /* TabBarView.swift */; };
+		2709FC191DCE7C4200F8DD36 /* TabBarButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2709FC181DCE7C4200F8DD36 /* TabBarButtonsView.swift */; };
+		2709FC1B1DCEA55700F8DD36 /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2709FC1A1DCEA55700F8DD36 /* TabBarItemView.swift */; };
 		2712F4261DBEB4800088845B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2712F4251DBEB4800088845B /* ViewController.xib */; };
 		2712F4281DBEB8BF0088845B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712F4271DBEB8BF0088845B /* main.swift */; };
 		2712F42A1DBEBA720088845B /* TestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712F4291DBEBA720088845B /* TestSpec.swift */; };
@@ -14,6 +17,16 @@
 		27215D9D1DBD100C00BCEA51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27215D9C1DBD100C00BCEA51 /* ViewController.swift */; };
 		27215DA41DBD136B00BCEA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27215DA31DBD136B00BCEA51 /* Assets.xcassets */; };
 		27215DA61DBD137D00BCEA51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27215DA51DBD137D00BCEA51 /* LaunchScreen.storyboard */; };
+		2759B4E31DCE52D100A6F646 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759B4E21DCE52D100A6F646 /* Constants.swift */; };
+		276071F11DD2587600ADD6EC /* TabBarItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276071F01DD2587600ADD6EC /* TabBarItemDelegate.swift */; };
+		2769F7651DD45A310038A165 /* TabBarItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2769F7641DD45A310038A165 /* TabBarItemBuilder.swift */; };
+		2769F7671DD45F960038A165 /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2769F7661DD45F960038A165 /* TabBarItemType.swift */; };
+		276A6DD51DC7F16C0060B699 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A6DD31DC7F16C0060B699 /* CustomTabBarController.swift */; };
+		27A243EE1DC93BE200CB539B /* CustomTabBarControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A243EC1DC93B2400CB539B /* CustomTabBarControllerSpec.swift */; };
+		27ACE9401DCBD8FA00C66A25 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ACE93F1DCBD8FA00C66A25 /* CustomTabBar.swift */; };
+		27ACE9421DCBD95000C66A25 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ACE9411DCBD95000C66A25 /* TabBarItem.swift */; };
+		27BCB1951DCA8738000F715E /* TabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCB1941DCA8738000F715E /* TabBarContainerView.swift */; };
+		27FFADB01DD8DB7D0001093C /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFADAF1DD8DB7D0001093C /* CustomNavigationController.swift */; };
 		3888B3FD847C2CABA1797659 /* Pods_SwiftNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE801C7EA39ACC5918D7B09 /* Pods_SwiftNews.framework */; };
 		F884D13592B242869695A9DB /* Pods_SwiftNewsSpec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAF14130E39CF0BC0D1E22D /* Pods_SwiftNewsSpec.framework */; };
 /* End PBXBuildFile section */
@@ -29,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2703E3061DCD310C000ABB2B /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		2709FC181DCE7C4200F8DD36 /* TabBarButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButtonsView.swift; sourceTree = "<group>"; };
+		2709FC1A1DCEA55700F8DD36 /* TabBarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
 		2712F4251DBEB4800088845B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		2712F4271DBEB8BF0088845B /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2712F4291DBEBA720088845B /* TestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSpec.swift; sourceTree = "<group>"; };
@@ -40,6 +56,16 @@
 		27215DA31DBD136B00BCEA51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27215DA51DBD137D00BCEA51 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27215DA71DBD139C00BCEA51 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2759B4E21DCE52D100A6F646 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		276071F01DD2587600ADD6EC /* TabBarItemDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemDelegate.swift; sourceTree = "<group>"; };
+		2769F7641DD45A310038A165 /* TabBarItemBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemBuilder.swift; sourceTree = "<group>"; };
+		2769F7661DD45F960038A165 /* TabBarItemType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
+		276A6DD31DC7F16C0060B699 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		27A243EC1DC93B2400CB539B /* CustomTabBarControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarControllerSpec.swift; sourceTree = "<group>"; };
+		27ACE93F1DCBD8FA00C66A25 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		27ACE9411DCBD95000C66A25 /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		27BCB1941DCA8738000F715E /* TabBarContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarContainerView.swift; sourceTree = "<group>"; };
+		27FFADAF1DD8DB7D0001093C /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		63ED7FAFCD0D8792F1814A91 /* Pods-SwiftNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNews/Pods-SwiftNews.release.xcconfig"; sourceTree = "<group>"; };
 		6C4180C9B11A4686AF1ECC41 /* Pods-SwiftNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNews/Pods-SwiftNews.debug.xcconfig"; sourceTree = "<group>"; };
 		9EE801C7EA39ACC5918D7B09 /* Pods_SwiftNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +148,7 @@
 		27215D921DBD0D2D00BCEA51 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2759B4E21DCE52D100A6F646 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -162,6 +189,7 @@
 		27215D971DBD0D7400BCEA51 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				276A6DCE1DC7EFE70060B699 /* CustomTabBar */,
 				27215D981DBD0F0E00BCEA51 /* Main */,
 			);
 			path = Modules;
@@ -188,6 +216,57 @@
 			isa = PBXGroup;
 			children = (
 				2712F4251DBEB4800088845B /* ViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		276A6DCE1DC7EFE70060B699 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				276A6DCF1DC7EFE70060B699 /* Controller */,
+				276A6DD01DC7EFE70060B699 /* Model */,
+				276A6DD11DC7EFE70060B699 /* Spec */,
+				276A6DD21DC7EFE70060B699 /* View */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		276A6DCF1DC7EFE70060B699 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				276A6DD31DC7F16C0060B699 /* CustomTabBarController.swift */,
+				27FFADAF1DD8DB7D0001093C /* CustomNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		276A6DD01DC7EFE70060B699 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27ACE93F1DCBD8FA00C66A25 /* CustomTabBar.swift */,
+				27ACE9411DCBD95000C66A25 /* TabBarItem.swift */,
+				276071F01DD2587600ADD6EC /* TabBarItemDelegate.swift */,
+				2769F7641DD45A310038A165 /* TabBarItemBuilder.swift */,
+				2769F7661DD45F960038A165 /* TabBarItemType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		276A6DD11DC7EFE70060B699 /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+				27A243EC1DC93B2400CB539B /* CustomTabBarControllerSpec.swift */,
+			);
+			path = Spec;
+			sourceTree = "<group>";
+		};
+		276A6DD21DC7EFE70060B699 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27BCB1941DCA8738000F715E /* TabBarContainerView.swift */,
+				2703E3061DCD310C000ABB2B /* TabBarView.swift */,
+				2709FC181DCE7C4200F8DD36 /* TabBarButtonsView.swift */,
+				2709FC1A1DCEA55700F8DD36 /* TabBarItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,7 +340,8 @@
 				TargetAttributes = {
 					271F39101DBC06D5001EB6D9 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = M8663S48MK;
+						ProvisioningStyle = Manual;
 					};
 					271F39241DBC06D6001EB6D9 = {
 						CreatedOnToolsVersion = 8.0;
@@ -434,8 +514,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				27215D9D1DBD100C00BCEA51 /* ViewController.swift in Sources */,
+				27BCB1951DCA8738000F715E /* TabBarContainerView.swift in Sources */,
+				2703E3071DCD310C000ABB2B /* TabBarView.swift in Sources */,
 				27215D9A1DBD0FB900BCEA51 /* AppDelegate.swift in Sources */,
+				276A6DD51DC7F16C0060B699 /* CustomTabBarController.swift in Sources */,
+				27ACE9421DCBD95000C66A25 /* TabBarItem.swift in Sources */,
+				27FFADB01DD8DB7D0001093C /* CustomNavigationController.swift in Sources */,
+				2709FC191DCE7C4200F8DD36 /* TabBarButtonsView.swift in Sources */,
+				2769F7651DD45A310038A165 /* TabBarItemBuilder.swift in Sources */,
+				2709FC1B1DCEA55700F8DD36 /* TabBarItemView.swift in Sources */,
+				27ACE9401DCBD8FA00C66A25 /* CustomTabBar.swift in Sources */,
+				276071F11DD2587600ADD6EC /* TabBarItemDelegate.swift in Sources */,
 				2712F4281DBEB8BF0088845B /* main.swift in Sources */,
+				2769F7671DD45F960038A165 /* TabBarItemType.swift in Sources */,
+				2759B4E31DCE52D100A6F646 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A243EE1DC93BE200CB539B /* CustomTabBarControllerSpec.swift in Sources */,
 				2712F42A1DBEBA720088845B /* TestSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,10 +649,13 @@
 			baseConfigurationReference = 6C4180C9B11A4686AF1ECC41 /* Pods-SwiftNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8663S48MK;
 				INFOPLIST_FILE = SwiftNews/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cookies.SwiftNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fc829b62-23b3-44c0-841b-312f5f84ab63";
+				PROVISIONING_PROFILE_SPECIFIER = "FDT com 2";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -571,6 +667,7 @@
 			baseConfigurationReference = 63ED7FAFCD0D8792F1814A91 /* Pods-SwiftNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftNews/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cookies.SwiftNews;
