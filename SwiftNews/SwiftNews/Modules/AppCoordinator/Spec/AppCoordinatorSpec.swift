@@ -36,11 +36,11 @@ class AppCoordinatorSpec: QuickSpec {
         }
         
         it("should have two tab") {
-          expect(sut.tabs.count).to(equal(2))
+          expect(sut.tabs.count).to(equal(5))
         }
 
         it("should have tab bar with two view controller") {
-          expect(sut.tabBarController.viewControllers.count).to(equal(2))
+          expect(sut.tabBarController.viewControllers.count).to(equal(5))
         }
 
         context("without action, first item should be selected") {
@@ -53,6 +53,12 @@ class AppCoordinatorSpec: QuickSpec {
           it("active view controller should have title Categories") {
             sut.tabBarController.tabBarSelected(position: 1)
             expect(sut.tabBarController.activeViewController?.title).to(equal("Categories"))
+          }
+        }
+        context("if third item is selected") {
+          it("active view controller should have title Live feed") {
+            sut.tabBarController.tabBarSelected(position: 2)
+            expect(sut.tabBarController.activeViewController?.title).to(equal("Live feed"))
           }
         }
       }

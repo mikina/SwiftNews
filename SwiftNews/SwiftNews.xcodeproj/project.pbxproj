@@ -15,7 +15,6 @@
 		270E17011DF457E400840C3A /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E17001DF457E400840C3A /* TabCoordinator.swift */; };
 		270E17031DF459BF00840C3A /* TabItemCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E17021DF459BF00840C3A /* TabItemCoordinator.swift */; };
 		270E17081DF45CD400840C3A /* MainTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E17071DF45CD400840C3A /* MainTabCoordinator.swift */; };
-		270E170A1DF46F7D00840C3A /* CategoriesTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E17091DF46F7D00840C3A /* CategoriesTabCoordinator.swift */; };
 		2712F4261DBEB4800088845B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2712F4251DBEB4800088845B /* ViewController.xib */; };
 		2712F4281DBEB8BF0088845B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712F4271DBEB8BF0088845B /* main.swift */; };
 		2712F42A1DBEBA720088845B /* TestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712F4291DBEBA720088845B /* TestSpec.swift */; };
@@ -28,6 +27,11 @@
 		2769F7651DD45A310038A165 /* TabBarItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2769F7641DD45A310038A165 /* TabBarItemBuilder.swift */; };
 		2769F7671DD45F960038A165 /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2769F7661DD45F960038A165 /* TabBarItemType.swift */; };
 		276A6DD51DC7F16C0060B699 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A6DD31DC7F16C0060B699 /* CustomTabBarController.swift */; };
+		2787CD311DF6250D0082E10A /* LatestNewsTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787CD301DF6250D0082E10A /* LatestNewsTabCoordinator.swift */; };
+		2787CD341DF625D60082E10A /* CategoriesTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787CD331DF625D60082E10A /* CategoriesTabCoordinator.swift */; };
+		2787CD371DF628290082E10A /* LiveNewsTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787CD361DF628290082E10A /* LiveNewsTabCoordinator.swift */; };
+		2787CD3A1DF628BC0082E10A /* FeaturedTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787CD391DF628BC0082E10A /* FeaturedTabCoordinator.swift */; };
+		2787CD3D1DF6291C0082E10A /* FavoritesTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787CD3C1DF6291C0082E10A /* FavoritesTabCoordinator.swift */; };
 		27A243EE1DC93BE200CB539B /* CustomTabBarControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A243EC1DC93B2400CB539B /* CustomTabBarControllerSpec.swift */; };
 		27ACE9401DCBD8FA00C66A25 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ACE93F1DCBD8FA00C66A25 /* CustomTabBar.swift */; };
 		27ACE9421DCBD95000C66A25 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ACE9411DCBD95000C66A25 /* TabBarItem.swift */; };
@@ -56,7 +60,6 @@
 		270E17001DF457E400840C3A /* TabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
 		270E17021DF459BF00840C3A /* TabItemCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemCoordinator.swift; sourceTree = "<group>"; };
 		270E17071DF45CD400840C3A /* MainTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabCoordinator.swift; sourceTree = "<group>"; };
-		270E17091DF46F7D00840C3A /* CategoriesTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTabCoordinator.swift; sourceTree = "<group>"; };
 		2712F4251DBEB4800088845B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		2712F4271DBEB8BF0088845B /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2712F4291DBEBA720088845B /* TestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSpec.swift; sourceTree = "<group>"; };
@@ -73,6 +76,11 @@
 		2769F7641DD45A310038A165 /* TabBarItemBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemBuilder.swift; sourceTree = "<group>"; };
 		2769F7661DD45F960038A165 /* TabBarItemType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
 		276A6DD31DC7F16C0060B699 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		2787CD301DF6250D0082E10A /* LatestNewsTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestNewsTabCoordinator.swift; sourceTree = "<group>"; };
+		2787CD331DF625D60082E10A /* CategoriesTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTabCoordinator.swift; sourceTree = "<group>"; };
+		2787CD361DF628290082E10A /* LiveNewsTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveNewsTabCoordinator.swift; sourceTree = "<group>"; };
+		2787CD391DF628BC0082E10A /* FeaturedTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedTabCoordinator.swift; sourceTree = "<group>"; };
+		2787CD3C1DF6291C0082E10A /* FavoritesTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTabCoordinator.swift; sourceTree = "<group>"; };
 		27A243EC1DC93B2400CB539B /* CustomTabBarControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarControllerSpec.swift; sourceTree = "<group>"; };
 		27ACE93F1DCBD8FA00C66A25 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		27ACE9411DCBD95000C66A25 /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
@@ -153,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				270E17071DF45CD400840C3A /* MainTabCoordinator.swift */,
-				270E17091DF46F7D00840C3A /* CategoriesTabCoordinator.swift */,
 			);
 			path = TabCoordinator;
 			sourceTree = "<group>";
@@ -245,6 +252,11 @@
 		27215D971DBD0D7400BCEA51 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2787CD2E1DF624600082E10A /* LatestNews */,
+				2787CD2D1DF6244A0082E10A /* Categories */,
+				2787CD2C1DF6243C0082E10A /* LiveNews */,
+				2787CD2B1DF624300082E10A /* Featured */,
+				2787CD2A1DF624140082E10A /* Favorites */,
 				270E16F71DF3729400840C3A /* AppCoordinator */,
 				276A6DCE1DC7EFE70060B699 /* CustomTabBar */,
 				27215D981DBD0F0E00BCEA51 /* Main */,
@@ -327,6 +339,86 @@
 				2709FC1A1DCEA55700F8DD36 /* TabBarItemView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2787CD2A1DF624140082E10A /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				2787CD3B1DF6290B0082E10A /* TabCoordinator */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		2787CD2B1DF624300082E10A /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+				2787CD381DF628AA0082E10A /* TabCoordinator */,
+			);
+			path = Featured;
+			sourceTree = "<group>";
+		};
+		2787CD2C1DF6243C0082E10A /* LiveNews */ = {
+			isa = PBXGroup;
+			children = (
+				2787CD351DF628130082E10A /* TabCoordinator */,
+			);
+			path = LiveNews;
+			sourceTree = "<group>";
+		};
+		2787CD2D1DF6244A0082E10A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2787CD321DF625C20082E10A /* TabCoordinator */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2787CD2E1DF624600082E10A /* LatestNews */ = {
+			isa = PBXGroup;
+			children = (
+				2787CD2F1DF624FC0082E10A /* TabCoordinator */,
+			);
+			path = LatestNews;
+			sourceTree = "<group>";
+		};
+		2787CD2F1DF624FC0082E10A /* TabCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2787CD301DF6250D0082E10A /* LatestNewsTabCoordinator.swift */,
+			);
+			path = TabCoordinator;
+			sourceTree = "<group>";
+		};
+		2787CD321DF625C20082E10A /* TabCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2787CD331DF625D60082E10A /* CategoriesTabCoordinator.swift */,
+			);
+			path = TabCoordinator;
+			sourceTree = "<group>";
+		};
+		2787CD351DF628130082E10A /* TabCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2787CD361DF628290082E10A /* LiveNewsTabCoordinator.swift */,
+			);
+			path = TabCoordinator;
+			sourceTree = "<group>";
+		};
+		2787CD381DF628AA0082E10A /* TabCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2787CD391DF628BC0082E10A /* FeaturedTabCoordinator.swift */,
+			);
+			path = TabCoordinator;
+			sourceTree = "<group>";
+		};
+		2787CD3B1DF6290B0082E10A /* TabCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2787CD3C1DF6291C0082E10A /* FavoritesTabCoordinator.swift */,
+			);
+			path = TabCoordinator;
 			sourceTree = "<group>";
 		};
 		31D3480F390993B9019C6B6A /* Pods */ = {
@@ -572,13 +664,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				27215D9D1DBD100C00BCEA51 /* ViewController.swift in Sources */,
+				2787CD371DF628290082E10A /* LiveNewsTabCoordinator.swift in Sources */,
 				27BCB1951DCA8738000F715E /* TabBarContainerView.swift in Sources */,
 				2703E3071DCD310C000ABB2B /* TabBarView.swift in Sources */,
 				27215D9A1DBD0FB900BCEA51 /* AppDelegate.swift in Sources */,
 				270E17011DF457E400840C3A /* TabCoordinator.swift in Sources */,
+				2787CD3D1DF6291C0082E10A /* FavoritesTabCoordinator.swift in Sources */,
 				270E16FE1DF377BA00840C3A /* AppCoordinator.swift in Sources */,
-				270E170A1DF46F7D00840C3A /* CategoriesTabCoordinator.swift in Sources */,
+				2787CD311DF6250D0082E10A /* LatestNewsTabCoordinator.swift in Sources */,
+				2787CD341DF625D60082E10A /* CategoriesTabCoordinator.swift in Sources */,
 				276A6DD51DC7F16C0060B699 /* CustomTabBarController.swift in Sources */,
+				2787CD3A1DF628BC0082E10A /* FeaturedTabCoordinator.swift in Sources */,
 				27ACE9421DCBD95000C66A25 /* TabBarItem.swift in Sources */,
 				27FFADB01DD8DB7D0001093C /* CustomNavigationController.swift in Sources */,
 				2709FC191DCE7C4200F8DD36 /* TabBarButtonsView.swift in Sources */,

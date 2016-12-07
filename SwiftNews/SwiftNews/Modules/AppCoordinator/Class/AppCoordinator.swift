@@ -10,7 +10,13 @@ import UIKit
 
 class AppCoordinator {
   var tabBarController: CustomTabBarController
-  var tabs: [TabItemCoordinator] = [deGenericize(coordinator: MainTabCoordinator()), deGenericize(coordinator: CategoriesTabCoordinator())]
+  var tabs: [TabItemCoordinator] = [
+    deGenericize(coordinator: LatestNewsTabCoordinator()),
+    deGenericize(coordinator: CategoriesTabCoordinator()),
+    deGenericize(coordinator: LiveNewsTabCoordinator()),
+    deGenericize(coordinator: FeaturedTabCoordinator()),
+    deGenericize(coordinator: FavoritesTabCoordinator())
+  ]
 
   init(tabBarController: CustomTabBarController) {
     self.tabBarController = tabBarController
